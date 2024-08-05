@@ -1,5 +1,5 @@
 .bg-image {
-    background-image: url('/public/Hero_bcg_img.jpg');
+    background-image: url('/Hero_bcg_img.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -7,4 +7,10 @@
 
 body {
     margin: 0;
+}
+
+.a {
+    .nav-brand {
+        margin: 0;
+    }
 }
