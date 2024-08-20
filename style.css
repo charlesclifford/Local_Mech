@@ -6,11 +6,54 @@
 }
 
 body {
+    /* background-color: #7E0000; */
     margin: 0;
 }
 
 .a {
     .nav-brand {
         margin: 0;
+        
     }
+}
+
+.btn-primary {
+    background-color: #E52727; /* Custom primary color */
+    color: white;
+    font-weight: 400;
+    border: 2px solid #E52727;
+    padding: 8px 24px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+.btn-primary:hover {
+    background-color: #7E0000;
+    color: white;
+    /* border-color: #7E0000; */
+}
+.btn-primary.hover {
+    background-color: #7E0000;
+    color: white;
+    /* border-color: #7E0000; */
+}
+.btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem #7E0000;
+}
+.btn-primary:active, .btn-primary.active {
+    background-color: #e52727c5;
+    /* border-color: #7E0000; */
+}
+.hero-content{
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sect2 {
+    background-image: url('/samuele-errico.png');
+    background-size: cover;
+    /* background-position: center;   */
 }

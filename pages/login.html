@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"/>
+
+    <link rel="stylesheet" href="/pages/reg.css">
+  </head>
+
+  <body>
+	<div class="container" id="main">
+		<div class="sign-up">
+			<form action="#">
+				<h1>Create Account</h1>
+				<div class="social-container">
+					<a href="https://facebook.com" class="social"><img src="/public/facebook_log.svg" alt="fb_icon"></a>
+					<a href="https://google.com" class="social"><img src="/public/google 1.svg" alt="go_icon"></a>
+				</div>
+				<p>or use your email for registration</p>
+				<input type="text" name="txt" placeholder="Name" required="">
+				<input type="email" name="email" placeholder="Email" required="">
+				<input type="password" name="pswd" placeholder="Password" required="">
+				<button>Sign Up</button>
+			</form>
+		</div>
+		<div class="sign-in">
+			<form action="#">
+				<h1>Log in</h1>
+				<div class="social-container">
+					<a href="https://facebook.com" class="social"><img src="/public/facebook_log.svg" alt="fb_icon"></a>
+					<a href="https://google.com" class="social"><img src="/public/google 1.svg" alt="go_icon"></a>
+				</div>
+				<p>Or use your account</p>
+				<input type="email" name="email" placeholder="Email" required="">
+				<input type="password" name="pswd" placeholder="Password" required="">
+				<a href="#">Forget your Password?</a>
+				<button>Log In</button>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-left">
+					<h1>Welcome Back Geeks!</h1>
+					<p>To keep connected with us please login with your personal info</p>
+					<button id="signIn">Log In</button>
+				</div>
+				<div class="overlay-right">
+					<h1>Hello, Geeks!</h1>
+					<p>Enter your personal details and start journey with us</p>
+					<button id="signUp">Sign Up</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		const signUpButton = document.getElementById('signUp');
+		const signInButton = document.getElementById('signIn');
+		const main = document.getElementById('main');
+
+		signUpButton.addEventListener('click', () => {
+			main.classList.add("right-panel-active");
+		});
+		signInButton.addEventListener('click', () => {
+			main.classList.remove("right-panel-active");
+		});
+	</script>
+  </body>
+</html>
